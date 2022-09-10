@@ -1,0 +1,21 @@
+{
+  "name": "truthordarebartrabot",
+  "version": "1.0.0",
+  "description": "Telegram Truth or Dare Game Bot",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "truthordare",
+    "telegram_bot",
+    "game_bot"
+  ],
+  "author": "Bartra",
+  "license": "ISC",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.59.0",
+    "nodemon": "^2.0.19"
+  }
+}
