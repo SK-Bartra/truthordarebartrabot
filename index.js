@@ -6,6 +6,8 @@ const { gameOptions, againOptions } = require('./options');
 
 const chats = {};
 
+//test
+
 const startGame = async (chatId) => {
   await bot.sendMessage(
     chatId,
