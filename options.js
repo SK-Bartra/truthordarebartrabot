@@ -1,3 +1,5 @@
+const { CALLBACK_CODE } = require('./constants');
+
 module.exports = {
   gameOptions: {
     reply_markup: JSON.stringify({
@@ -24,6 +26,32 @@ module.exports = {
   againOptions: {
     reply_markup: JSON.stringify({
       inline_keyboard: [[{ text: 'Играть ещё раз', callback_data: '/again' }]],
+    }),
+  },
+  truthOrDareOptions: {
+    reply_markup: JSON.stringify({
+      inline_keyboard: [
+        [
+          { text: '😇 ПРАВДА', callback_data: CALLBACK_CODE.TRUTH },
+          { text: '😈 ДЕЙСТВИЕ', callback_data: CALLBACK_CODE.DARE },
+        ],
+      ],
+    }),
+  },
+  addTruthOrDareOptions: {
+    reply_markup: JSON.stringify({
+      inline_keyboard: [
+        [
+          {
+            text: '😇 Добавить вопрос',
+            callback_data: CALLBACK_CODE.ADD_QUESTION,
+          },
+          {
+            text: '😈 Добавить задачу',
+            callback_data: CALLBACK_CODE.ADD_ACTION,
+          },
+        ],
+      ],
     }),
   },
 };
